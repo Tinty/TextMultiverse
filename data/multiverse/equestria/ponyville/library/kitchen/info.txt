@@ -1,2 +1,0 @@
-name"kitchen"
-type"location"

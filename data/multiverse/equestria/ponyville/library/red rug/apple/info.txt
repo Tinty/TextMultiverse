@@ -1,2 +1,0 @@
-name"apple"
-type"object"

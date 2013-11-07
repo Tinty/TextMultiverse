@@ -1,3 +1,0 @@
-name"rug"
-type"object"
-adjectives"red,rough"

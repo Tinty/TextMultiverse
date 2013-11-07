@@ -1,2 +1,0 @@
-name"pantry"
-type"location"

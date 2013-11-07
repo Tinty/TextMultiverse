@@ -1,2 +1,0 @@
-name"equestria"
-type"location"

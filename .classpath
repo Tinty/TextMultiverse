@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src">
+		<attributes>
+			<attribute name="ignore_optional_problems" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Marcus/Documents/GitHub/commons-lang3-3.1/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Marcus/Documents/GitHub/commons-lang3-3.1/commons-lang3-3.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Marcus/Documents/GitHub/commons-lang3-3.1/commons-lang3-3.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Marcus/Documents/GitHub/commons-lang3-3.1/commons-lang3-3.1-tests.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
