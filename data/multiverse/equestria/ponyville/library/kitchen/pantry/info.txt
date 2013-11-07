@@ -1,0 +1,2 @@
+name"pantry"
+type"location"

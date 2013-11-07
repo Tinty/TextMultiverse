@@ -1,0 +1,3 @@
+name"rug"
+type"object"
+adjectives"blue,soft"
