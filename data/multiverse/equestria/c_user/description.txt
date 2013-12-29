@@ -1,0 +1,2 @@
+description_loc"a generic human male"
+description_vic"a generic human male"

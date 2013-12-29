@@ -1,0 +1,4 @@
+name"John"
+type"user"
+location"2"
+state"standing"

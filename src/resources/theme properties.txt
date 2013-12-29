@@ -1,0 +1,14 @@
+output.background"0,0,0"
+output.foreground"0,255,0"
+input.background"0,0,0"
+input.foreground"0,255,0"
+caret.color"0,255,0"
+font"Caviar Dreams Bold.ttf"
+*************************************************
+*To define a color, use the format R,G,B with a values from 0 to 255 for each variable.
+*Tips:
+*R = Red
+*B = Blue
+*G = Green
+*If R = 255 and if B and G = 0 then your color would be a very bright red.
+*If lower values are darker, higher values are brighter.

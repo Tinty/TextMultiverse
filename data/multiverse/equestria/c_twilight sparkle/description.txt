@@ -1,0 +1,2 @@
+description_loc"a petite lavender coated pony with a dark violet, streaked mane"
+description_vic"[description_loc] you also notice that she is a female unicorn"

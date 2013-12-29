@@ -1,0 +1,5 @@
+description_loc"a big tree that appears to have had its trunk hollowed out to make a home. A telescope on a balcony near the top of the tree's canopy stands out to you"
+description_vic"[description_loc]. A sign outside the door reads:[line][line][quote1][line][line][addon]"
+quote1"[residents] live in and operate the public library here"
+quote2"All checkouts free! See Spike for checking out a book if I'm not available, and be sure to sign in and out![line]Sincerely, Twilight Sparkle"
+addon"An additional note is posted to the side on the sign, it reads:[line][line][quote2][line][line]"

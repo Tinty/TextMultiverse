@@ -1,0 +1,4 @@
+name"Twilight Sparkle"
+type"character"
+location"2"
+state"sitting;jumping;dancing;"

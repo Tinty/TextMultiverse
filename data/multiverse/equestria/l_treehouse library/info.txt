@@ -1,0 +1,5 @@
+name"Treehouse Library"
+type"indoor"
+location"2"
+owner"Twilight Sparkle"
+residents"Twilight Sparkle;Spike;"
