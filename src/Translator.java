@@ -2,7 +2,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
-
 import org.apache.commons.lang3.StringUtils;
 /*
  * Translator class
@@ -242,6 +241,7 @@ public class Translator {
 			}
 		}
 		//User specific integration end
+		int entitiesInUserLoc = 0;
 		for(int x = 0; x < Main.localeInventory.length; x++){
 			String[] entityName = null,
 						  entityType = null,
@@ -302,6 +302,7 @@ public class Translator {
 							}
 						}
 						if(userIsHere){
+							entitiesInUserLoc++;
 							isUserAlone = false;
 							//if user is in location
 							//entity vicinity description insertion start
@@ -310,7 +311,9 @@ public class Translator {
 							//that output element is not null.
 							try {
 								if(!entityVicinityDescription.equals(null)){
-									output[z][1] += "Near you, you find...\n\n";
+									if(entitiesInUserLoc == 1){
+										output[z][1] += "Near you, you find...\n\n";
+									}
 									int counter = 0;
 									do{
 										if(counter > 1
@@ -349,13 +352,11 @@ public class Translator {
 											counter++;
 										}while(counter != entityState.length);
 										try {
-											if(!output[z][1].endsWith("\\n")
+											if(!output[z][1].endsWith("\n")
 													&& !output[z][1].endsWith(".")
 													&& !output[z][1].endsWith("?")
 													&& !output[z][1].endsWith("!")){
 												output[z][1] += " here.";
-											}else{
-												output[z][1] += ".";
 											}
 										} catch (NullPointerException eSONPE) {
 											continue;
@@ -364,7 +365,7 @@ public class Translator {
 									}
 								} catch (NullPointerException eDONPE2) {
 									try {
-										if(!output[z][1].endsWith("\\n")
+										if(!output[z][1].endsWith("\n")
 												&& !output[z][1].endsWith(".")
 												&& !output[z][1].endsWith("?")
 												&& !output[z][1].endsWith("!")){
@@ -384,7 +385,9 @@ public class Translator {
 								//if one is not available, will try to load local description.
 								try {
 									if(!entityLocalDescription.equals(null)){
-										output[z][1] += "Near you, you find...\n\n";
+										if(entitiesInUserLoc == 1){
+											output[z][1] += "Near you, you find...\n\n";
+										}
 										int counter = 0;
 										do{
 											if(counter > 1
@@ -423,13 +426,11 @@ public class Translator {
 												counter++;
 											}while(counter != entityState.length);
 											try {
-												if(!output[z][1].endsWith("\\n")
+												if(!output[z][1].endsWith("\n")
 														&& !output[z][1].endsWith(".")
 														&& !output[z][1].endsWith("?")
 														&& !output[z][1].endsWith("!")){
 													output[z][1] += " here.";
-												}else{
-													output[z][1] += ".";
 												}
 											} catch (NullPointerException eSONPE) {
 												continue;
@@ -438,7 +439,7 @@ public class Translator {
 										}
 									} catch (NullPointerException eDONPE2) {
 										try {
-											if(!output[z][1].endsWith("\\n")
+											if(!output[z][1].endsWith("\n")
 													&& !output[z][1].endsWith(".")
 													&& !output[z][1].endsWith("?")
 													&& !output[z][1].endsWith("!")){
@@ -453,7 +454,7 @@ public class Translator {
 								} catch (NullPointerException eSONPE2) {
 									//if vicinity and local description == null
 									try {
-										if(!output[z][1].endsWith("\\n")
+										if(!output[z][1].endsWith("\n")
 												&& !output[z][1].endsWith(".")
 												&& !output[z][1].endsWith("?")
 												&& !output[z][1].endsWith("!")){
@@ -528,7 +529,7 @@ public class Translator {
 													counter++;
 												}while(counter != entityState.length);
 												try {
-													if(!output[z][1].endsWith("\\n")
+													if(!output[z][1].endsWith("\n")
 															&& !output[z][1].endsWith(".")
 															&& !output[z][1].endsWith("?")
 															&& !output[z][1].endsWith("!")){
@@ -541,7 +542,7 @@ public class Translator {
 											}
 										} catch (NullPointerException eDONPE2) {
 											try {
-												if(!output[z][1].endsWith("\\n")
+												if(!output[z][1].endsWith("\n")
 														&& !output[z][1].endsWith(".")
 														&& !output[z][1].endsWith("?")
 														&& !output[z][1].endsWith("!")){
@@ -556,7 +557,7 @@ public class Translator {
 									} catch (NullPointerException uSONPE2) {
 										//if local description == null
 										try {
-											if(!output[z][1].endsWith("\\n")
+											if(!output[z][1].endsWith("\n")
 													&& !output[z][1].endsWith(".")
 													&& !output[z][1].endsWith("?")
 													&& !output[z][1].endsWith("!")){
@@ -617,7 +618,7 @@ public class Translator {
 												counter++;
 											}while(counter != entityState.length);
 											try {
-												if(!output[z][1].endsWith("\\n")
+												if(!output[z][1].endsWith("\n")
 														&& !output[z][1].endsWith(".")
 														&& !output[z][1].endsWith("?")
 														&& !output[z][1].endsWith("!")){
@@ -630,7 +631,7 @@ public class Translator {
 										}
 									} catch (NullPointerException eDONPE2) {
 										try {
-											if(!output[z][1].endsWith("\\n")
+											if(!output[z][1].endsWith("\n")
 													&& !output[z][1].endsWith(".")
 													&& !output[z][1].endsWith("?")
 													&& !output[z][1].endsWith("!")){
@@ -645,7 +646,7 @@ public class Translator {
 								} catch (NullPointerException eLDSONPE2) {
 									//if local description == null
 									try {
-										if(!output[z][1].endsWith("\\n")
+										if(!output[z][1].endsWith("\n")
 												&& !output[z][1].endsWith(".")
 												&& !output[z][1].endsWith("?")
 												&& !output[z][1].endsWith("!")){

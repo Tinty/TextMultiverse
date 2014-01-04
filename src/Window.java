@@ -30,7 +30,6 @@ public class Window extends JFrame {
 	 * Constructor for the window.
 	 */
 	public Window() throws IOException {
-		//TODO: The super method should take in name of game being played.
 		//Window creation start
 		super(WordUtils.capitalizeFully(properties.propertiesInit("resources/universe.txt", "universe", 0)));
 		Main.setUniverse(WordUtils.capitalizeFully(properties.propertiesInit("resources/universe.txt", "universe", 0)));

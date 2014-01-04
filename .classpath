@@ -10,5 +10,9 @@
 	<classpathentry kind="lib" path="C:/Users/Marcus/Documents/GitHub/commons-lang3-3.1/commons-lang3-3.1-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Marcus/Documents/GitHub/commons-lang3-3.1/commons-lang3-3.1-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Marcus/Documents/GitHub/commons-lang3-3.1/commons-lang3-3.1-tests.jar"/>
+	<classpathentry kind="lib" path="/home/pnoy/workspace/TextMultiverse/commons-lang3-3.1/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="/home/pnoy/workspace/TextMultiverse/commons-lang3-3.1/commons-lang3-3.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/pnoy/workspace/TextMultiverse/commons-lang3-3.1/commons-lang3-3.1-sources.jar"/>
+	<classpathentry kind="lib" path="/home/pnoy/workspace/TextMultiverse/commons-lang3-3.1/commons-lang3-3.1-tests.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
